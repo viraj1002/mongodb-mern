@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signin.css" type="text/css">
+</head>
+
+<body>
+    <style>
+        /* Layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* Adjusted */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button Styles */
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <div class="container">
+    <form action="/reset" method="post">
+        <h1>Reset Password</h1>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email:">
+
+        <label for="newpassword">New Password:</label>
+        <input type="password" name="newpassword">
+
+        <label for="cnewpassword">Confirmed Password:</label>
+        <input type="password" name="cnewpassword">
+
+        <button type="submit">Reset</button>
+        <!-- <p>Create Account-<a href="signup.html">Register</a></p> -->
+
+    </form>
+    </div>
+</body>
+
+</html>
